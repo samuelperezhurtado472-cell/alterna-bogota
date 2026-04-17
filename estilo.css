@@ -7,10 +7,10 @@ body {
 
 /* HEADER */
 header {
-  background: purple;
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
+  background: linear-gradient(90deg, #5a0f7a, #8a0f3c);
 }
 
 nav a {
@@ -22,7 +22,7 @@ nav a {
 /* BANNER */
 .banner {
   height: 300px;
-  background: #2a0f0f; /* sin imagen para evitar errores */
+  background: linear-gradient(180deg, #2a0f0f, #000);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,20 +38,23 @@ nav a {
   text-align: center;
 }
 
-/* CARTAS */
+/* GRID */
 .cartas {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
 }
 
+/* CARTA */
 .carta {
   background: #2a0f0f;
-  padding: 15px;
-  border-radius: 15px;
-  width: 250px;
-  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.carta:hover {
+  transform: scale(1.03);
 }
 
 /* IMÁGENES */
@@ -59,23 +62,31 @@ nav a {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
 }
 
-/* BOTONES */
-.btn {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid white;
-  background: transparent;
+/* BOTÓN */
+button {
+  margin: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #8a0f3c;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* INFO */
 .info {
-  display: none;
-  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.info.show {
+  max-height: 200px;
+  padding: 10px;
 }
 
 /* FOOTER */
