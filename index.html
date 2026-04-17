@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musica Alternativa Bogotana</title>
+
+  <!-- Fuente alternativa -->
+  <link rel="stylesheet" href="styles/estilo.css">
+
+</head>
+<body>
+
+<header>
+  <h1>ALTERNA BOGOTÁ</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#bandas">Bandas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="banner" id="inicio">
+  <h2>Musica Alternativa Bogotana</h2>
+</section>
+
+<section class="section" id="bandas">
+  <h2>Cartas de Bandas</h2>
+
+  <div class="cartas">
+
+    <div class="carta">
+      <img src="margaraa.jpg" alt="">
+      <h3>Margarita Siempre Viva</h3>
+      <p>Indie emocional y nostálgico.</p>
+      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <div class="info" style="display:none;">
+        <p>Vocalista: Cristian Sanchez<br>
+          Género: Indie rock / dream pop<br>
+          Canciones: "Fractal", "Loa dias apacibles", "Depresion post paisaje"<br>
+          Banda de Medellin con sonidos nostálgicos y letras emocionales.</p>
+      </div>
+    </div>
+
+    <div class="carta">
+      <img src="ortiga.jpg" alt="">
+      <h3>Ortiga</h3>
+      <p>Rock alternativo con vibra urbana.</p>
+      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <div class="info" style="display:none;">
+        <p>Vocalista: (varía / proyecto colectivo)<br>
+        Género: Rock alternativo / experimental<br>
+        Canciones: "Escarmenar", "Valeriana", "Veintiseis"<br>
+        Proyecto con sonido crudo y urbano muy de Bogotá.</p>
+      </div>
+    </div>
+
+    <div class="carta">
+      <img src="kidchen.jpg" alt="">
+      <h3>Kidchen</h3>
+      <p>Indie fresco con identidad joven.</p>
+      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <div class="info" style="display:none;">
+        <p>Vocalista: Nicolás Mejía<br>
+        Género: Indie pop / alternativo<br>
+        Canciones: "Una carta bastara", "De mi para ti y de tu para mi", "Mi pasion es el futbol"<br>
+        Banda joven con estética hardcore y sonido melancólico.</p>
+      </div>
+    </div>
+
+    <div class="carta">
+      <img src="olgalu.jpg" alt="">
+      <h3>Olga Lucía, no me vayas a dejar</h3>
+      <p>Sonido alternativo con sensibilidad artística.</p>
+      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <div class="info" style="display:none;">
+        <p>Vocalista: sam<br>
+          Género: Alternativo / experimental<br>
+          Canciones: "Origami", "Juana", "Xxooxxooxxxox"<br>
+          Proyecto artístico con sonidos íntimos y sensibles.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="contacto">
+  <h2>Contacto</h2>
+  <p>Sigue la escena alternativa bogotana.</p>
+  <a href="#" class="btn">Instagram</a>
+</section>
+
+<footer>
+  <p>© Samuel Pérez 2026</p>
+</footer>
+
+</body>
+<script>
+  function toggleInfo(button){
+    const info = button.nextElementSibling;
+    if(info.style.display === "none"){
+      info.style.display = "block";
+    } else {
+      info.style.display = "none";
+    }
+  }
+</script>
+</html>
