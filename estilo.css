@@ -22,9 +22,7 @@ nav a {
 /* BANNER */
 .banner {
   height: 300px;
-  background-image: url('./img/fondo.jpg'); /* asegúrate que exista */
-  background-size: cover;
-  background-position: center;
+  background: #2a0f0f; /* sin imagen para evitar errores */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +72,7 @@ nav a {
   cursor: pointer;
 }
 
-/* INFO OCULTA */
+/* INFO */
 .info {
   display: none;
   margin-top: 10px;
