@@ -47,7 +47,7 @@ nav a:hover{
 /* BANNER */
 .banner{
   height:100vh;
-  background:url('../images/margarita.jpg') center 70%/cover no-repeat;
+  background-image: url(''../images/margarita.jpg'');
   display:flex;
   align-items:center;
   justify-content:center;
