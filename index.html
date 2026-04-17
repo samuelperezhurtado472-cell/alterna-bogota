@@ -11,7 +11,7 @@
 <body>
 
 <header>
-  <h1>ALTERNA BOGOTÁ</h1>
+  <h1>MUSICA ALTERNATIVA BOGOTANA</h1>
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#bandas">Bandas</a>
@@ -32,10 +32,14 @@
       <img src="margaraa.jpg">
       <h3>Margarita Siempre Viva</h3>
       <p>Indie emocional y nostálgico.</p>
-      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <button onclick="toggleInfo(this)">Ver más</button>
       <div class="info">
-        <p>Vocalista: Cristian Sanchez<br>
-        Género: Indie rock / dream pop</p>
+        <p>
+        Vocalista: Cristian Sanchez<br>
+        Género: Indie rock / dream pop<br>
+        Canciones: "Fractal", "Los días apacibles", "Depresión post paisaje"<br>
+        Banda de Medellín con sonidos nostálgicos y letras emocionales.
+        </p>
       </div>
     </div>
 
@@ -43,9 +47,14 @@
       <img src="ortiga.jpg">
       <h3>Ortiga</h3>
       <p>Rock alternativo con vibra urbana.</p>
-      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <button onclick="toggleInfo(this)">Ver más</button>
       <div class="info">
-        <p>Rock alternativo / experimental</p>
+        <p>
+        Vocalista: (proyecto colectivo)<br>
+        Género: Rock alternativo / experimental<br>
+        Canciones: "Escarmenar", "Valeriana", "Veintiséis"<br>
+        Proyecto con sonido crudo y urbano muy de Bogotá.
+        </p>
       </div>
     </div>
 
@@ -53,9 +62,14 @@
       <img src="kidchen.jpg">
       <h3>Kidchen</h3>
       <p>Indie fresco con identidad joven.</p>
-      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <button onclick="toggleInfo(this)">Ver más</button>
       <div class="info">
-        <p>Indie pop / alternativo</p>
+        <p>
+        Vocalista: Nicolás Mejía<br>
+        Género: Indie pop / alternativo<br>
+        Canciones: "Una carta bastará", "De mí para ti", "Mi pasión es el fútbol"<br>
+        Banda joven con estética hardcore y sonido melancólico.
+        </p>
       </div>
     </div>
 
@@ -63,9 +77,14 @@
       <img src="olga.jpg">
       <h3>Olga Lucía, no me vayas a dejar</h3>
       <p>Sonido alternativo con sensibilidad artística.</p>
-      <button class="btn" onclick="toggleInfo(this)">Ver más</button>
+      <button onclick="toggleInfo(this)">Ver más</button>
       <div class="info">
-        <p>Proyecto alternativo experimental</p>
+        <p>
+        Vocalista: Sam<br>
+        Género: Alternativo / experimental<br>
+        Canciones: "Origami", "Juana", "Xxooxxooxxxox"<br>
+        Proyecto artístico con sonidos íntimos y sensibles.
+        </p>
       </div>
     </div>
 
@@ -75,7 +94,7 @@
 <section class="section" id="contacto">
   <h2>Contacto</h2>
   <p>Sigue la escena alternativa bogotana.</p>
-  <a href="#" class="btn">Instagram</a>
+  <a href="#">Instagram</a>
 </section>
 
 <footer>
@@ -83,9 +102,9 @@
 </footer>
 
 <script>
-function toggleInfo(button){
-  const info = button.nextElementSibling;
-  info.style.display = info.style.display === "block" ? "none" : "block";
+function toggleInfo(btn){
+  const info = btn.nextElementSibling;
+  info.classList.toggle("show");
 }
 </script>
 
